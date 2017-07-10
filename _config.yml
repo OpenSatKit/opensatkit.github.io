@@ -1,0 +1,31 @@
+# Site settings
+title: OpenSatKit
+header-img: img/wallup.jpg
+email: your-email@yourdomain.com
+copyright_name: OpenSatKit
+description: "An open-source kit for satelite software"
+baseurl: ""
+url: "http://opensatkit.github.io"
+github_username:  OpenSatKit
+email_username:  your-email@yourdomain.com
+
+# Google Analytics
+# To enable google analytics, uncomment below line with a valid Google Tracking ID
+# google_tracking_id:
+
+# Build settings
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: '/page/:num/'
+  title: ':title - :num of :max'
+  limit: 0
+  sort_field: 'date'
+sort_reverse: true
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+include: ["_pages"]
+
+gems: [jekyll-paginate-v2, jekyll-feed]
