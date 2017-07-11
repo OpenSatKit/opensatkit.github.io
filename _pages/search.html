@@ -1,0 +1,37 @@
+---
+layout: page
+title: "Search"
+permalink: /search/
+---
+
+<!-- <h1>Search</h1>
+<form action="/search" method="get">
+  <input type="text" class="form-control" id="search-query" name="q" autocomplete="off">
+</form> 
+
+<br> -->
+
+<section id="search-results" style="display: none;">
+
+
+{% raw %}
+
+<script id="search-results-template" type="text/mustache">
+  {{#entries}}
+    <article>
+      <h3>
+        {{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
+        <a href="{{url}}">{{title}}</a>
+      </h3>
+      {{#is_post}}
+      <ul>
+        {{#tags}}<li>{{.}} </li>{{/tags}}
+      </ul>
+      {{/is_post}}
+    </article>
+  {{/entries}}
+</script>
+{% endraw %}
+
+
+</section>

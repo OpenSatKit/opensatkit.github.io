@@ -1,6 +1,9 @@
 ---
 layout: page
 description: An open-source satelite software system
+pagination: 
+    enabled: true
+    per_page: 3
 ---
 
 <div style="text-align: center">
@@ -12,4 +15,29 @@ description: An open-source satelite software system
 
 	<a href="/docs/" class="btn btn-info">Docs</a>
 	<a href="/download/" class="btn btn-danger">Download</a>
+
+	<br><br><br>
+
+	<h1>Recent news</h1>
+
+<div>
+	{% for post in paginator.posts %}
+	  <span>
+	 		{{ post.date | date: "%B %-d, %Y" }}
+	 		&nbsp
+	    <a href="{{ post.url | prepend: site.baseurl }}">
+	        <strong>            {{ post.title }}
+	        </strong>
+	    </a>
+	  </span>
+  	<br>
+
+	{% endfor %}
+</div>
+	
+<a href="/news/" class="btn">Read more</a>
+
+<br><br>
+
+
 </div>

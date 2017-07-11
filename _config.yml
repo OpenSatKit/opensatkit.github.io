@@ -16,7 +16,7 @@ email_username:  your-email@yourdomain.com
 # Build settings
 pagination:
   enabled: true
-  per_page: 3
+  per_page: 5
   permalink: '/page/:num/'
   title: ':title - :num of :max'
   limit: 0
@@ -29,4 +29,4 @@ permalink: pretty
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 include: ["_pages"]
 
-gems: [jekyll-paginate-v2, jekyll-feed]
+gems: [jekyll-paginate-v2, jekyll-feed, jekyll-lunr-js-search]
