@@ -21,7 +21,8 @@ pagination:
   title: ':title - :num of :max'
   limit: 0
   sort_field: 'date'
-sort_reverse: true
+  sort_reverse: true
+
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
