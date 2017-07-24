@@ -8,9 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="An open-source kit for satelite software">
 
-    <title>OpenSatKit - OpenSatKit</title>
+    <title>Docs - OpenSatKit</title>
 
-    <link rel="canonical" href="http://opensatkit.github.io/">
+    <link rel="canonical" href="http://opensatkit.github.io/docs/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -77,11 +77,11 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="-heading">
-                    <h1>An open-source satelite software system</h1>
-                    <h1>OpenSatKit</h1>
+                    <h1>Documentation</h1>
+                    <h1>Docs</h1>
                     
                         <hr class="small">
-                        <span class="subheading">An open-source satelite software system</span>
+                        <span class="subheading">Documentation</span>
                     
                 </div>
             </div>
@@ -93,63 +93,108 @@
 <div class="container main-content">
 	<div class="row">
 		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-			<div style="text-align: center">
-	<img style="display: block; margin: 0 auto; max-width: 300px; width: 50%" src="img/satkit.png">
+			<h2 id="install-satkit-vm">Install SatKit VM</h2>
 
-	<h1>An open-source kit for satelite software</h1>
+<h3 id="option-1-from-virtualbox-image-recommended">Option 1: From VirtualBox Image (recommended)</h3>
+<ul>
+  <li>download <code class="highlighter-rouge">SatKit.ova</code></li>
+  <li>in VirtualBox Manager, open File / Import Appliance and select <code class="highlighter-rouge">SatKit.ova</code></li>
+  <li>import</li>
+</ul>
 
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius praesentium recusandae illo eaque architecto error, repellendus iusto reprehenderit, doloribus, minus sunt. Numquam at quae voluptatum in officia voluptas voluptatibus, minus!</p>
+<hr />
 
-	<a href="/docs/" class="btn btn-info">Docs</a>
-	<a href="/download/" class="btn btn-danger">Download</a>
+<h3 id="option-2-from-scratch">Option 2: From Scratch</h3>
 
-	<br><br><br>
+<ul>
+  <li>download <a href="https://www.ubuntu.com/download/desktop">Ubuntu 16.04</a></li>
+  <li>download <code class="highlighter-rouge">cfskit53117withoutlogs.zip</code></li>
+</ul>
 
-	<h1>Recent news</h1>
+<h4 id="setup-ubuntu-vm">Setup Ubuntu vm</h4>
+<ul>
+  <li>new virtual box from Ubuntu 16.04 iso</li>
+  <li>vm name: kit-machine</li>
+  <li>user: cfsuser</li>
+  <li>password: cfs</li>
+  <li>3rd party software: yes</li>
+  <li>update during install: yes</li>
+</ul>
 
-<div>
-	
-	  <span>
-	 		July 11, 2017
-	 		&nbsp
-	    <a href="/2017/07/11/release2/">
-	        <strong>            Release 0.0.1
-	        </strong>
-	    </a>
-	  </span>
-  	<br>
+<h4 id="share-kit-files">Share kit files</h4>
 
-	
-	  <span>
-	 		July 11, 2017
-	 		&nbsp
-	    <a href="/2017/07/11/release/">
-	        <strong>            Release 0.0.0
-	        </strong>
-	    </a>
-	  </span>
-  	<br>
+<h6 id="on-host">On host:</h6>
+<ul>
+  <li>create new folder <code class="highlighter-rouge">Shared</code></li>
+  <li>place <code class="highlighter-rouge">cfskit53117withoutlogs.zip</code> in <code class="highlighter-rouge">Shared</code></li>
+  <li>in VirtualBox Manager: Settings / Shared Folders, add <code class="highlighter-rouge">Shared</code></li>
+</ul>
 
-	
-	  <span>
-	 		July 10, 2017
-	 		&nbsp
-	    <a href="/2017/07/10/no-news/">
-	        <strong>            No news yet
-	        </strong>
-	    </a>
-	  </span>
-  	<br>
+<h6 id="on-vm">On vm:</h6>
+<ul>
+  <li>install VirtualBox guest additions
+    <ul>
+      <li>open VirtualBox menu (right-ctrl + home on Windows)</li>
+      <li>Devices / Insert Guest Additions CD image</li>
+      <li>run</li>
+    </ul>
+  </li>
+</ul>
 
-	
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>mkdir ~/temp/
+sudo mount -t vboxsf Shared ~/temp/
+<span class="nb">cd</span> ~/temp/
+unzip ~/temp/cfskit53117withoutlogs.zip
+</code></pre>
 </div>
-	
-<a href="/news/" class="btn">Read more</a>
 
-<br><br>
-
-
+<h4 id="setup-kit-directory">Setup kit directory</h4>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>mkdir ~/satKit/
+cp -r ~/temp/cfs<span class="se">\ </span>kit<span class="se">\ </span>5-31-17-without-logs/<span class="k">*</span> ~/satKit/
+</code></pre>
 </div>
+
+<h4 id="install-dependencies">Install dependencies</h4>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo apt install cmake curl default-jre gcc-multilib xfce4-terminal  
+</code></pre>
+</div>
+
+<h4 id="build-cfs">Build CFS</h4>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="nb">cd</span> ~/satKit/cfs/
+
+make distclean
+make prep
+make
+make install
+
+<span class="c"># testing:</span>
+sudo ./build/exe/cpu1/core-cpu1
+
+cp apps/kit_sch/fsw/tables/<span class="k">*</span> build/exe/cpu1/cf/
+cp apps/kit_to/fsw/tables/kit_to_pkttbl.xml build/exe/cpu1/cf/
+</code></pre>
+</div>
+
+<h4 id="install-cosmos">Install COSMOS</h4>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="nb">cd</span> ~/satKit/cosmos/
+bash &lt;<span class="o">(</span><span class="se">\c</span>url -sSL https://raw.githubusercontent.com/BallAerospace/COSMOS/master/vendor/installers/linux_mac/INSTALL_COSMOS.sh<span class="o">)</span>
+<span class="c"># install dependencies: sudo</span>
+<span class="c"># install ruby 2.2.6 with rbenv: yes</span>
+<span class="c"># install and run cosmos demo: no</span>
+
+<span class="nb">exec</span> <span class="nv">$SHELL</span>
+
+gem install bundler
+bundle install
+</code></pre>
+</div>
+
+<h4 id="start-satkit">Start SatKit</h4>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>ruby ~/satKit/cosmos/Launcher
+</code></pre>
+</div>
+
 		</div>
 	</div>
 </div>
