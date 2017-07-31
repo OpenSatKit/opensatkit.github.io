@@ -26,7 +26,7 @@ pagination:
 markdown: kramdown
 highlighter: rouge
 permalink: pretty
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","Gemfile","Gemfile.lock","deploy.sh"]
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","Gemfile","Gemfile.lock","deploy.sh","LICENSE"]
 include: ["_pages"]
 
 gems: [jekyll-paginate-v2, jekyll-feed, jekyll-lunr-js-search]
