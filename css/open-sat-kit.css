@@ -440,7 +440,7 @@ div.main-content {
   padding: 5px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  /*overflow-x: scroll;*/
+  overflow-x: auto;
 }
 .terminal p {
   padding: 5px 10px;
