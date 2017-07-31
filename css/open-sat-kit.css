@@ -1,9 +1,3 @@
-/*!
- * OpenSatKit v1.0.0 (opensatkit.github.io)
- * Copyright 2017 Johann Miller
- * Licensed under MIT (https://spdx.org/licenses/MIT)
- */
-
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 20px;
@@ -178,11 +172,11 @@ hr.small {
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading h1,
   .intro-header .page-heading h1 {
-    font-size: 80px;
+    font-size: 60px;
   }
 }
 .intro-header .post-heading h1 {
-  font-size: 35px;
+  font-size: 30px;
 }
 .intro-header .post-heading .subheading,
 .intro-header .post-heading .meta {

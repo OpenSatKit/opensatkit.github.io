@@ -3,7 +3,7 @@
     "title": "OpenSatKit",
     "version": "1.0.0",
     "homepage": "opensatkit.github.io",
-    "author": "Johann Miller",
+    "author": "OpenSatKit",
     "license": "MIT",
     "devDependencies": {
         "grunt": "~0.4.5",
