@@ -2,12 +2,13 @@
 description: "Provides a complete open source desktop solution for learning how to use NASA's core flight system (cFS). The kit uses Ball Aerospace's COSMOS command and telemetry system, NASA's cFS, and a NASA dynamic simulator called 42. "
 github-wiki-url: https://github.com/OpenSatKit/OpenSatKit/wiki
 email: dmccomas63@gmail.com
-baseurl: "/blog-proto"
+baseurl: ""
+#baseurl: "/blog-proto"
 #url: "http://dmccomas.github.io"
 github:
     wiki-url:  https://github.com/OpenSatKit/OpenSatKit/wiki
     issues-url: https://github.com/OpenSatKit/OpenSatKit/issues
-    url: https://dmccomas.github.io/blog-proto
+    url: https://opensatkit.github.io/
 #   url: https://github.com/OpenSatKit/OpenSatKit/
 #   username:  OpenSatKit
 
