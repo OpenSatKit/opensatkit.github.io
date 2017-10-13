@@ -1,32 +1,28 @@
-# Site settings
-title: OpenSatKit
-header-img: img/wallup.jpg
-email: your-email@yourdomain.com
-copyright_name: OpenSatKit
-description: "An open-source kit for satelite software"
-baseurl: ""
-url: "http://opensatkit.github.io"
-github_username:  OpenSatKit
-email_username:  your-email@yourdomain.com
+# Site Settings
+description: "Provides a complete open source desktop solution for learning how to use NASA's core flight system (cFS). The kit uses Ball Aerospace's COSMOS command and telemetry system, NASA's cFS, and a NASA dynamic simulator called 42. "
+github-wiki-url: https://github.com/OpenSatKit/OpenSatKit/wiki
+email: dmccomas63@gmail.com
+baseurl: "/blog-proto"
+#url: "http://dmccomas.github.io"
+github:
+    wiki-url:  https://github.com/OpenSatKit/OpenSatKit/wiki
+    issues-url: https://github.com/OpenSatKit/OpenSatKit/issues
+    url: https://dmccomas.github.io/blog-proto
+#   url: https://github.com/OpenSatKit/OpenSatKit/
+#   username:  OpenSatKit
 
-# Google Analytics
-# To enable google analytics, uncomment below line with a valid Google Tracking ID
-# google_tracking_id:
+paginate:            5
 
 # Build settings
-pagination:
-  enabled: true
-  per_page: 5
-  permalink: '/page/:num/'
-  title: ':title - :num of :max'
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
+markdown:            kramdown
+highlighter:         rouge
+permalink:           none
+plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed]
 
-markdown: kramdown
-highlighter: rouge
-permalink: pretty
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","Gemfile","Gemfile.lock","deploy.sh","LICENSE"]
-include: ["_pages"]
+# Customise feed settings (uncommenting following two fields to customise feed title and description)
+#title:		     "Lagrange-Custom"
+#description:	     "a minimalist Jekyll theme-Custom"
 
-gems: [jekyll-paginate-v2, jekyll-feed, jekyll-lunr-js-search]
+# RSS 2.0 can be used instead of Atom by uncommenting following two lines
+#feed:
+#   path:	     rss-feed.xml
