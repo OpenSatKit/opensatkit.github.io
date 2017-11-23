@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="An open-source kit for satelite software">
+
+    <title>Docs - OpenSatKit</title>
+
+    <link rel="canonical" href="http://opensatkit.github.io/docs/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/open-sat-kit.min.css">
+
+    <!-- Pygments Github CSS -->
+    <link rel="stylesheet" href="/css/syntax.css">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link type="application/atom+xml" rel="alternate" href="http://opensatkit.github.io/feed.xml" title="OpenSatKit" />
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">
+                <!-- <img src="img/satkit.png"> -->
+                OpenSatKit
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/news/">News</a></li>
+                <li><a href="/docs/">Docs</a></li>
+                <li><a href="//github.com/opensatkit">GitHub</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+
+    <!-- Page Header -->
+<!-- <header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="-heading">
+                    <h1>Documentation</h1>
+                    <h1>Docs</h1>
+                    
+                        <hr class="small">
+                        <span class="subheading">Documentation</span>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</header> -->
+
+<!-- Main Content -->
+<div class="container main-content">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			<h2 id="install-satkit-vm">Install SatKit VM</h2>
+
+<h3 id="option-1-from-virtualbox-image-recommended">Option 1: From VirtualBox Image (recommended)</h3>
+<ul>
+  <li>download <code class="highlighter-rouge">SatKit.ova</code></li>
+  <li>in VirtualBox Manager, open File / Import Appliance and select <code class="highlighter-rouge">SatKit.ova</code></li>
+  <li>import</li>
+</ul>
+
+<hr />
+
+<h3 id="option-2-from-scratch">Option 2: From Scratch</h3>
+
+<ul>
+  <li>download <a href="https://www.ubuntu.com/download/desktop">Ubuntu 16.04</a></li>
+  <li>download <code class="highlighter-rouge">cfskit53117withoutlogs.zip</code></li>
+</ul>
+
+<h4 id="setup-ubuntu-vm">Setup Ubuntu vm</h4>
+<ul>
+  <li>new virtual box from Ubuntu 16.04 iso</li>
+  <li>vm name: kit-machine</li>
+  <li>user: cfsuser</li>
+  <li>password: cfs</li>
+  <li>3rd party software: yes</li>
+  <li>update during install: yes</li>
+</ul>
+
+<h4 id="share-kit-files">Share kit files</h4>
+
+<h6 id="on-host">On host:</h6>
+<ul>
+  <li>create new folder <code class="highlighter-rouge">Shared</code></li>
+  <li>place <code class="highlighter-rouge">cfskit53117withoutlogs.zip</code> in <code class="highlighter-rouge">Shared</code></li>
+  <li>in VirtualBox Manager: Settings / Shared Folders, add <code class="highlighter-rouge">Shared</code></li>
+</ul>
+
+<h6 id="on-vm">On vm:</h6>
+<ul>
+  <li>install VirtualBox guest additions
+    <ul>
+      <li>open VirtualBox menu (right-ctrl + home on Windows)</li>
+      <li>Devices / Insert Guest Additions CD image</li>
+      <li>run</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>mkdir ~/temp/
+sudo mount -t vboxsf Shared ~/temp/
+<span class="nb">cd</span> ~/temp/
+unzip ~/temp/cfskit53117withoutlogs.zip
+</code></pre>
+</div>
+
+<h4 id="setup-kit-directory">Setup kit directory</h4>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>mkdir ~/satKit/
+cp -r ~/temp/cfs<span class="se">\ </span>kit<span class="se">\ </span>5-31-17-without-logs/<span class="k">*</span> ~/satKit/
+</code></pre>
+</div>
+
+<h4 id="install-dependencies">Install dependencies</h4>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>sudo apt install cmake curl default-jre gcc-multilib xfce4-terminal  
+</code></pre>
+</div>
+
+<h4 id="build-cfs">Build CFS</h4>
+
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="nb">cd</span> ~/satKit/cfs/
+
+make distclean
+make prep
+make
+make install
+
+<span class="c"># testing:</span>
+sudo ./build/exe/cpu1/core-cpu1
+
+cp apps/kit_sch/fsw/tables/<span class="k">*</span> build/exe/cpu1/cf/
+cp apps/kit_to/fsw/tables/kit_to_pkttbl.xml build/exe/cpu1/cf/
+</code></pre>
+</div>
+
+<h4 id="install-cosmos">Install COSMOS</h4>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code><span class="nb">cd</span> ~/satKit/cosmos/
+bash &lt;<span class="o">(</span><span class="se">\c</span>url -sSL https://raw.githubusercontent.com/BallAerospace/COSMOS/master/vendor/installers/linux_mac/INSTALL_COSMOS.sh<span class="o">)</span>
+<span class="c"># install dependencies: sudo</span>
+<span class="c"># install ruby 2.2.6 with rbenv: yes</span>
+<span class="c"># install and run cosmos demo: no</span>
+
+<span class="nb">exec</span> <span class="nv">$SHELL</span>
+
+gem install bundler
+bundle install
+</code></pre>
+</div>
+
+<h4 id="start-satkit">Start SatKit</h4>
+<div class="language-bash highlighter-rouge"><pre class="highlight"><code>ruby ~/satKit/cosmos/Launcher
+</code></pre>
+</div>
+
+		</div>
+	</div>
+</div>
+
+<hr>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row" style="text-align: center; align-items: center">
+
+                <form action="/search" method="get" style="width:90%; max-width: 300px; margin: 0 auto">
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="search-query" name="q" autocomplete="off" placeholder="Search">
+                        <span class="input-group-btn">
+                            <input type="submit" class="btn " value="Go" style="padding: 6px 12px">
+                        </span>
+                    </div>
+                </form> 
+
+                <br>
+        </div>
+        <div class="row">
+
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+
+                    <li>
+                        <a href="/feed.xml">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    
+                    <li>
+                        <a href="https://github.com/OpenSatKit">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li>
+                        <a href="mailto:your-email@yourdomain.com">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <p class="copyright text-muted">OpenSatKit 2017</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+  <script src="/js/search.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- jQuery -->
+<!-- <script src="/js/jquery.min.js "></script> -->
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/open-sat-kit.min.js "></script>
+
+<script type="text/javascript">
+  $(function() {
+    $('#search-query').lunrSearch({
+      indexUrl  : '/js/index.json',           // url for the .json file containing search index data
+      results   : '#search-results',          // selector for containing search results element
+      template  : '#search-results-template', // selector for Mustache.js template
+      titleMsg  : '<h1>Search results<h1>',   // message attached in front of results (can be empty)
+      emptyMsg  : '<p>Nothing found.</p>'     // shown message if search returns no results
+    });
+  });
+</script>
+
+
+    
+
+
+</body>
+
+</html>
