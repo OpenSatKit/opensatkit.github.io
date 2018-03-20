@@ -1,0 +1,28 @@
+# Site Settings
+description: "Provides a complete open source desktop solution for learning how to use NASA's core flight system (cFS). The kit uses Ball Aerospace's COSMOS command and telemetry system, NASA's cFS, and a NASA dynamic simulator called 42. "
+github-wiki-url: https://github.com/OpenSatKit/OpenSatKit/wiki
+email: dmccomas63@gmail.com
+baseurl: "/blog-proto"
+#url: "http://dmccomas.github.io"
+github:
+    wiki-url:  https://github.com/OpenSatKit/OpenSatKit/wiki
+    issues-url: https://github.com/OpenSatKit/OpenSatKit/issues
+    url: https://dmccomas.github.io/blog-proto
+#   url: https://github.com/OpenSatKit/OpenSatKit/
+#   username:  OpenSatKit
+
+paginate:            5
+
+# Build settings
+markdown:            kramdown
+highlighter:         rouge
+permalink:           none
+plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed]
+
+# Customise feed settings (uncommenting following two fields to customise feed title and description)
+#title:		     "Lagrange-Custom"
+#description:	     "a minimalist Jekyll theme-Custom"
+
+# RSS 2.0 can be used instead of Atom by uncommenting following two lines
+#feed:
+#   path:	     rss-feed.xml
