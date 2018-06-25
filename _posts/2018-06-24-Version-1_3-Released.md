@@ -26,3 +26,4 @@ Here's a brief look at the OSK roadmap...
   <li> Create the frameworks for application unit and functional test suites.</li>
 </ul>
 
+<p><a href="{{https://opensatkit.github.io/journal/Installation-Guide.html}}">Installation Guide</a>.</p>
