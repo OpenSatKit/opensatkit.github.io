@@ -31,10 +31,16 @@
 <loc>http://localhost:4000/menu/blog.html</loc>
 </url>
 <url>
+<loc>http://localhost:4000/menu/community.html</loc>
+</url>
+<url>
 <loc>http://localhost:4000/menu/contact.html</loc>
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/menu/why.html</loc>
 </url>
 <url>
 <loc>http://localhost:4000/page2/</loc>
