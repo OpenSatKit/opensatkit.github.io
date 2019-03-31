@@ -10,9 +10,9 @@ title: cFS Community
 There are multiple ways to participate in the online cFS community:
 
 <ul>
-  <li>Join the cFS community mailing list.  This forum is useful for posting broader inquiries such as, “Has anyone ported the cFS to platform X?”.  To join the mailing list send a request to <{{site.email}}></li>
+  <li>Join the cFS community mailing list.  This forum is useful for posting broader inquiries such as, “Has anyone ported the cFS to platform X?”.  To join the mailing list send a request to {{site.email}}</li>
   <li>Join the cFS Stack Overflow <a href="https://stackoverflow.com/questions/tagged/core-flight-system" target="_blank" rel="noopener">core-flight-system</a>  Q&A. Post technical questions and provide solutions to other people’s questions</li>
-  <li>Publish your products and services on this website. Send an email to <{{site.email}}></li>
+  <li>Publish your products and services on this website. Send an email to {{site.email}}</li>
   <li>Provide feedback and/or contribute to a product</li>
   <li>Participate in our community events</li>
   <li>Do great things with the cFS!</li>
@@ -24,7 +24,7 @@ If you would like your technology effort listed here please send an email to <{{
 
 <h2>cFS Applications & Libaries</h2>
 
-<table style="height: 231px; width: 543.8px; border-color: black;">
+<table style="height: 231px; width: 543.8px; border="1" border-color: black;">
 <tbody>
 <tr style="height: 17px;">
 <td style="width: 120px; height: 17px;"><strong>Name/Link</strong></td>
@@ -99,7 +99,7 @@ If you would like your technology effort listed here please send an email to <{{
 
 <h2>cFS Tools</h2>
 
-<table style="height: 231px; width: 543.8px; border-color: black;">
+<table style="height: 231px; width: 543.8px; border="1" border-color: black;">
 <tbody>
 <tr style="height: 17px;">
 <td style="width: 120px; height: 17px;"><strong>Name/Link</strong></td>
@@ -118,7 +118,7 @@ If you would like your technology effort listed here please send an email to <{{
 
 <h2>cFS Distributions</h2>
 
-<table style="height: 231px; width: 566px; border-color: black;">
+<table style="height: 231px; width: 566px; border="1" border-color: black;">
 <tbody>
 <tr style="height: 17px;">
 <td style="width: 120px; height: 17px;">Name/Link</td>
