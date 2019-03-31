@@ -19,7 +19,7 @@ The cFS is a collaborative community. NASA provides the open source cFS Framewor
 
 <h2>cFS Applications & Libaries</h2>
 
-<table style="height: 231px; width: 543.8px;">
+<table style="height: 231px; width: 543.8px; border-color: black;">
 <tbody>
 <tr style="height: 17px;">
 <td style="width: 120px; height: 17px;"><strong>Name</strong></td>
