@@ -10,7 +10,7 @@ title: cFS Community
 There are multiple ways to participate in the online cFS community:
 
 <ul>
-  <li>Join the cFS community mailing list.  This forum is useful for posting broader inquiries such as, “Has anyone ported the cFS to platform X?”. <a href="mailto: {{site.email}}">Send an email</a> to join the mailing.</li>
+  <li>Join the cFS community mailing list.  This forum is useful for posting broader inquiries such as, “Has anyone ported the cFS to platform X?”. <a href="mailto: {{site.email}}">Send an email</a> to join the mailing list.</li>
   <li>Join the cFS Stack Overflow <a href="https://stackoverflow.com/questions/tagged/core-flight-system" target="_blank" rel="noopener">core-flight-system</a>  Q&A. Post technical questions and provide solutions to other people’s questions</li>
   <li>Publish your products and services on this website. <a href="mailto: {{site.email}}">Send an email</a> to request a product or sevice listing.</li>
   <li>Provide feedback and/or contribute to a product</li>
@@ -20,7 +20,7 @@ There are multiple ways to participate in the online cFS community:
 
 <h2>cFS Platforms</h2>
 
-If you would like your technology effort listed here please <a href="mailto: {{site.email}}">send an email</a>.
+If you would like your technology effort listed here please <a href="mailto: {{site.email}}">send an email</a> request.
 
 <h2>cFS Applications & Libaries</h2>
 
@@ -155,7 +155,7 @@ If you would like your technology effort listed here please <a href="mailto: {{s
 
 <h2>cFS Training</h2>
 
-For information about the NASA Goddard Space Flight Center cFS training, please <a href="mailto: {{site.email}}">send an email</a>.
+For information about the NASA Goddard Space Flight Center cFS training, please <a href="mailto: {{site.email}}">send an email</a> request.
 
 <h2>Community Events</h2>
 
@@ -163,5 +163,5 @@ The cFS team holds an annual cFS Workshop in conjunction with the <a href="http:
 
 <h2>cFS Technology Efforts</h2>
 
-If you would like your technology effort listed here please <a href="mailto: {{site.email}}">send an email</a>.
+If you would like your technology effort listed here please <a href="mailto: {{site.email}}">send an email</a> request.
 
