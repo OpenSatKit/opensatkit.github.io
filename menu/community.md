@@ -12,7 +12,7 @@ There are multiple ways to participate in the online cFS community:
 <ul>
   <li>Join the cFS community mailing list.  This forum is useful for posting broader inquiries such as, “Has anyone ported the cFS to platform X?”. Please send an email to <a href="mailto: {{site.email}}">OSK Support</a> to join the mailing list.</li>
   <li>Join the cFS Stack Overflow <a href="https://stackoverflow.com/questions/tagged/core-flight-system" target="_blank" rel="noopener">core-flight-system</a>  Q&A. Post technical questions and provide solutions to other people’s questions</li>
-  <li>Publish your products and services on this website. Send an email to <a href="mailto: {{site.email}}">OSK Support</a> to request a product or sevice listing.</li>
+  <li>Publish your products and services on this website. Please send an email to <a href="mailto: {{site.email}}">OSK Support</a> to request a product or sevice listing.</li>
   <li>Provide feedback and/or contribute to a product</li>
   <li>Participate in our community events</li>
   <li>Do great things with the cFS!</li>
