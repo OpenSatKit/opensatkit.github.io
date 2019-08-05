@@ -174,5 +174,5 @@ The cFS team holds an annual cFS Workshop in conjunction with the <a href="http:
 
 <h2>cFS Technology Efforts</h2>
 
-If you would like your technology effort listed here please send an email to <a href="mailto: {{site.email}}">OSK Support</a>.
+If you would like your technology effort listed here, please send an email to <a href="mailto: {{site.email}}">OSK Support</a>.
 
