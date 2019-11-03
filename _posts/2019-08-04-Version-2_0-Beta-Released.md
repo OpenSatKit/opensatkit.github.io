@@ -29,7 +29,7 @@ image:
   <li> Continue to improve the documentation: Complete User's Guide. Improve self-guided training modules with exercises.</li>
   <li> Complete CFDP testing and use as the primary file transfer protocol.</li>
   <li> Enhance the Manage App tab to include browsing and adding apps from a library and creating an app plugin model.</li>
-  <li> Integrate cFE 6.6 and start to improve the unit test infrastructure. cFE 6.6 still has some known unit test deficiencies.</li>
+  <li> Integrate cFE 6.7 and start to improve the unit test infrastructure. cFE 6.6 still has some known unit test deficiencies.</li>
 </ul>
 
 <p>See also the OSK <a href="{{site.github.wiki-url}}">GitHub Wiki</a> and the <a href="https://opensatkit.github.io/journal/Installation-Guide.html">Installation Instructions</a>.</p>
