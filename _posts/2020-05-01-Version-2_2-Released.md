@@ -5,8 +5,8 @@ author: "David McComas"
 categories: journal
 tags: [documentation]
 image:
-  feature: osk-logo-quarter.jpg
-  teaser:  osk-logo-quarter.jpg
+  feature: OSK-Logo-2563-1458.png
+  teaser:  OSK-Logo-2563-1458.png
   credit:  ""
   creditlink: ""
 ---
