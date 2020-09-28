@@ -4,7 +4,7 @@ title: "2.3 Released"
 author: "David McComas"
 categories: journal
 tags: [documentation]
-image:
+image: 
   feature: OSK-Logo-2563-1458.png
   teaser:  OSK-Logo-2563-1458.png
   credit:  ""
