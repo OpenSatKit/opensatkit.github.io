@@ -12,13 +12,14 @@ image:
 ---
 <div>
 
-The main purpose of this release is to upgrade to the latest 42 simulator version called “2042”. 42 version numbers are defined in 42/Docs/Revision.txt. The previous 42 simulator used with OSK v2.3 and earlier predates when 42 was released without version numbers so it’s not surprising that significant changes have been made to 42 since the last OSK integration effort.  Since 42 does not directly impact OSK’s cFS educational capabilities nor its cFS application development environment I decided upgrading 42 was a minor revision to OSK.
+<p>The main purpose of this release is to upgrade to the latest 42 simulator version called “2042”. 42 version numbers are defined in 42/Docs/Revision.txt. The previous 42 simulator used with OSK v2.3 and earlier predates when 42 was released without version numbers so it’s not surprising that significant changes have been made to 42 since the last OSK integration effort.  Since 42 does not directly impact OSK’s cFS educational capabilities nor its cFS application development environment I decided upgrading 42 was a minor revision to OSK.</p>
 
-The default closed loop simulation seems stable but I have not completely debugged the system and I do have issue I42 issues if a keep 42 busy while manipulating its graphics.  I didn’t want to delay this release so people could work with the latest version of 42. I will continue to test the system.
+<p>The default closed loop simulation seems stable but I have not completely debugged the system and I do have issue I42 issues if a keep 42 busy while manipulating its graphics.  I didn’t want to delay this release so people could work with the latest version of 42. I will continue to test the system.</p>
 
-A couple of system level enhancements include removing any password assumptions in both documentation and ruby scripts. See <a href="https://github.com/OpenSatKit/OpenSatKit/issues/42">Issue 42</a>. Some actions execute in privileged mode and require the user’s account password.  I also modified the home page’s “Learn OpenSatKit->OSK_Version” drop down to include the version numbers of all OSK components.
+<p>A couple of system level enhancements include removing any password assumptions in both documentation and ruby scripts. See <a href="https://github.com/OpenSatKit/OpenSatKit/issues/42">Issue 42</a>. Some actions execute in privileged mode and require the user’s account password.  I also modified the home page’s “Learn OpenSatKit-OSK_Version” drop down to include the version numbers of all OSK components.</p>
 
 <p>42 update change summary:</p>
+
 <ul>
   <li> 42 added tools that generate socket interface code that can be used by 42 and by an external system for reading/writing from/to sockets for exchanging parameter and real-time data. 42 includes an example standalone configuration in 42/Standalone and a separate C application called “AcApp”.</li>
   <li>The standalone example was used to create a separate 42/OSK configuration directory.  The AcApp was moved to a new OSK FSW library called osk_42_lib.  This library contains all of the 42 source files that need to be linked into the 42 FSW applications I42 and F42. Prior to this release, 42 source files were contained in the F42 app source directory tree. osk_42_lib also contains a copy of 42’s “AC Struct” that is shared between I42 and F42.</li>
