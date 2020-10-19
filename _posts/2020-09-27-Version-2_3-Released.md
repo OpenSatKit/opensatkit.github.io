@@ -12,7 +12,7 @@ image:
 ---
 <div>
 
-Many of the changes in Version 2.3 were driven by the creation of the Runtime Environment App YouTube tutorial video. The initial OSK was developed with just enough features to create a complete ground, flight and simulator system that would help people use the cFS in a system environment. OSK has reached a second phase of development where the functional gaps need t be filled and a more-scripted based user experience can be provided. Currently there are a lot of custom screens that are okay for exploration and education but they  have limited value for achieiving more complex tasks. I'm now using the development of the training videos as use cases for identifying functional gaps and for creating test and demonstration scripts that will be added in the next few OSK releases. I'll also be addressing bugs and component upgrades.
+Many of the changes in Version 2.3 were driven by the creation of the Runtime Environment App YouTube tutorial video. The initial OSK was developed with just enough features to create a complete ground, flight and simulator system that would help people use the cFS in a system environment. OSK has reached a second phase of development where the functional gaps need to be filled and a more-scripted based user experience can be provided. Currently there are a lot of custom screens that are okay for exploration and education but they have limited value for achieving more complex tasks. I'm now using the development of the training videos as use cases for identifying functional gaps and for creating test and demonstration scripts that will be added in the next few OSK releases. I'll also be addressing bugs and component upgrades.
 
 <p>Release notes for version 2.3:</p>
 
