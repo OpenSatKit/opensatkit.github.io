@@ -21,7 +21,7 @@ Most of the changes in Version 2.5 were driven by the creation of the Data-File 
   <li>Adding TFTP app commands that can be used to initiate file transfers.  Prior to v2.5 all TFTP transactions were initiated by calling OSK’s TFTP ruby library. The TFTP protocol is still implemented over sockets and not the command and telemetry interface so it still isn’t flight-like, but very useful in OSK’s desktop environment. </li>
   <li>Adding a Data Storage and Telemetry Output table generation tool.  A sample analysis spreadsheet is provided that can produce CSV files that are used as input to the table generation tool. </li>
   <li>Adding preliminary Data and File Management training slides and a link to the introductory video.</li>
-  <li>Cleaning up screen layouts and creating better context-specific content. The main page’s <i>“Example Scripts”</i> was renamed to <i>” SimpleSat Ref Mission”. This may seem trivial but it reflects the path towards making the SimpleSat reference mission an integral part of the cFS learning experience. </li>
+  <li>Cleaning up screen layouts and creating better context-specific content. The main page’s <i>“Example Scripts”</i> was renamed to <i>” SimpleSat Ref Mission”</i>. This may seem trivial but it reflects the path towards making the SimpleSat reference mission an integral part of the cFS learning experience. </li>
 </ul>
 
 
