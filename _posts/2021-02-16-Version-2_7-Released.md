@@ -24,7 +24,7 @@ image:
    <li><b>Containerized Kit</b></li>
       <ul>
       <li>This is a new track that has emerged due to interest in using the OSK as an operational system that can be used as a telemetry source for advanced telemetry processing research efforts or interactively by people interested in learning about spacecraft systems in general.</li>
-      <li>A prototype MQTT library and app were added to explore commanding the cFS via an MQTT broker and a ‘hello world’ message was successfully sent. MQTT is a lightweight transport protocol used in the ‘internet of things.’ Thanks to Alan  Cudmore for his <a  href=”https://github.com/alanc98/mqtt_lib”>MQTT Library</a> and <a  href="https://github.com/alanc98/mqtt_app">MQTT App</a>.</li> 
+      <li>A prototype MQTT library and app were added to explore commanding the cFS via an MQTT broker and a ‘hello world’ message was successfully sent. MQTT is a lightweight transport protocol used in the ‘internet of things.’ Thanks to Alan  Cudmore for his <a  href="https://github.com/alanc98/mqtt_lib">MQTT Library</a> and <a  href="https://github.com/alanc98/mqtt_app">MQTT App</a>.</li> 
       </ul>
 
    <li><b>App Packaging and Distribution</b></li>
