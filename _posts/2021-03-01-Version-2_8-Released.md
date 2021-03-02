@@ -15,7 +15,7 @@ image:
 <ol>
    <li><b>Community App Demos and Videos</b></li>
       <ul>
-      <li>Added a YouTube video that provides an overview of the <a href="https://www.youtube.com/watch?v=pzAkAhBR-Pk">Maintenance App Group</a> and the script used in the video, <i>demo_maint_mem_apps.rb</i>, to the SimSat target procedures directory.</li>
+      <li>Added a YouTube video that provides an overview of the <a href="https://www.youtube.com/watch?v=pzAkAhBR-Pk">Maintenance App Group</a> and added the script used in the video, <i>demo_maint_mem_apps.rb</i>, to the SimSat target procedures directory.</li>
       <li>Updated Data Storage (DS) version from 2.4.1 to 2.5.2.</li>
       <li>Updated Memory Dwell (MD) version from 2.3.0 to 2.3.3.</li>
       </ul>
@@ -28,12 +28,12 @@ image:
 
    <li><b>App Packaging and Distribution</b></li>
       <ul>
-      <li>Nothing specifically was done in this area however the ISIM changes listed above and the test scripting changes listed below both matured artifacts that need to be considered for packaging and distributing apps.</li>
+      <li>Nothing specifically was done in this area, however, the ISIM changes listed above and the test scripting changes listed below both matured artifacts that need to be considered for packaging and distributing apps.</li>
       </ul>
 
 <li><b>Verification and Ops Scripts</b></li>
       <ul>
-      <li>Enhanced the integration scripts so the version number reported in each app’s NoOp event message is verified against the version defined in the app’s JSON description file. </li>
+      <li>Enhanced the integration scripts so the version number reported in each app’s NoOp event message is verified against the version defined in the app’s OSK JSON description file. </li>
       <li>Created files and test case classes for an ISIM functional test suite and partially implemented tests that verify valid commands. </li>
       </ul>
 
