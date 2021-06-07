@@ -18,36 +18,42 @@ image:
    <li><b>cFS Raspberry Pi with COSMOS control</b></li>
    <li><b>Research and development</b></li>
 </ol>
-There was not a significant change in content, but it has been tagged as a major release because of the structural change. The biggest content changes are a separate cFS target is built for each workflow and the creation of quick starts guides for each workflow. The <a href="https://github.com/OpenSatKit/pi-sat">Raspberry Pi Target</a> is maintained in a separate repo from OSK. The quick start guides are in draft form and will be updated in the next release.  The <a href="https://github.com/OpenSatKit/OpenSatKit/blob/master/docs/OSK-QS-Intro.pdf">OSK Introductory Guide</a> provides more detail on the targets. The first three targets only contain apps that support the target’s user workflow. The R&D target contains any apps that may be a of use to the cFS community. Having a separate target allows the apps to be maintained without cluttering another target.
+There was not a significant change in content, but it has been tagged as a major release because of the structural change. The biggest content changes are a separate cFS target is built for each workflow and the creation of quick starts guides for each workflow. The <a href="https://github.com/OpenSatKit/pi-sat">Raspberry Pi Target</a> is maintained in a separate repo from OSK. The quick start guides are in draft form and will be updated in the next release.  The <a href="https://github.com/OpenSatKit/OpenSatKit/blob/master/docs/OSK-QS-Intro.pdf">OSK Introductory Guide</a> provides more detail on the targets. The first three targets only contain apps that support the target’s user workflow. The R&D target contains any apps that may be a of use to the cFS community. Having a separate R&D target allows the apps to be maintained without cluttering another target.
+
+</div>
+
 <p>Near term roadmap...</p>
 <table>
   <tr>
     <th>Workflow</th>
+    <th>   </th>    
     <th>Plans</th>
   </tr>
   <tr>
     <td>Mission FSW</td>
+    <td>   </td>
     <td>Update Quick Start guide</td>
   </tr>
   <tr>
     <td>Mission FSW</td>
+    <td>   </td>
     <td>Create an Autonomy app group demo and overview YouTube video</td>
   </tr>
   <tr>
     <td>cFS Education</td>
+    <td>   </td>
     <td>Create a draft code-as-you-go (CAYG) app hands on training material</td>
   </tr>
   <tr>
     <td>Raspberry Pi</td>
+    <td>   </td>
     <td>Create initial cFS Raspberry Pi repo with installation instructions. Create COSMOS-to-Pi interface and configuration instructions.</td>
   </tr>
   <tr>
     <td>R&D</td>
+    <td>   </td>
     <td>Create OSK C Framework demo app that will serve as the end goal of the CAYG exercise</td>
   </tr>
 </table>
 
-<p>See also the OSK <a href="{{site.github.wiki-url}}">GitHub Wiki</a> and the <a href="https://opensatkit.github.io/journal/Installation-Guide.html">Installation Instructions</a>.</p>
-
-</div>
-
+<p>See the <a href="{{site.github.wiki-url}}">OSK GitHub Wiki</a> for installation instructions.</p>
