@@ -11,7 +11,7 @@ image:
   creditlink: ""
 ---
 <div>
-<p>In version 3.0 OSK’s main screen was refactored to support the following four user workflows: 
+<p>In version 3.0 OSK’s main screen was refactored to support the following four user workflows:</p>
 <ol>
    <li><b>cFS-based mission FSW development</b></li>
    <li><b>cFS FSW education</b></li>
