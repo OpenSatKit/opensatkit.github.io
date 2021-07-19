@@ -15,7 +15,7 @@ image:
 <ul>
    <li>Added a new app <i>osk_c_demo</i> to the Research and Development <i>Sandbox</i> target. This app illustrates many features of the OSK C Application Framework (osk_c_fw) and it serves as the end goal of a new application development tutorial.</li>
    <li>Added an application development tutorial to the cFS Education <i>cfsat</i> target. The tutorial steps the user from a Hello World app to the fully featured <i>osk_c_demo</i> app.</li>
-   <li>Released v1.0 of the <a href="https://github.com/OpenSatKit/pi-sat">Raspberry Pi Target</a>[Raspberry Pi Target]( https://github.com/OpenSatKit/pi-sat). This target can be installed on a Raspberry Pi and includes a sample app that blinks an LED connected to the Pi’s GPIO.</li>
+   <li>Released v1.0 of the <a href="https://github.com/OpenSatKit/pi-sat">Raspberry Pi Target</a>. This target can be installed on a Raspberry Pi and includes a sample app that blinks an LED connected to the Pi’s GPIO.</li>
    <li>Made significant updates to the <a href="https://github.com/OpenSatKit/OpenSatKit/blob/master/docs/OSK-Quick-Start.pdf">OSK Quick Start</a> and the <a href="https://github.com/OpenSatKit/OpenSatKit/blob/master/cosmos/config/targets/CFSAT/docs/cFS-Edu-Quick-Start.pdf">cFS Education Quick Start</a> Guides.</li>
 </ul>
 
