@@ -13,9 +13,9 @@ image:
 <div>
 <p>Version 3.2 completes the integration of the pi-sat target with OSK's COSMOS.</p>
 <ul>
-   <li>Created a COSMOS-to-Pi interface that allows the GPIO demo app to be run from COSMOS over a WiFi connection to a Pi.</li>
+   <li>Created a COSMOS-to-Pi interface that allows the Pi-Sat GPIO demo app to be run from COSMOS over a WiFi connection.</li>
    <li>Released v1.1 of the <a href="https://github.com/OpenSatKit/pi-sat">Raspberry Pi Target</a> that includes <i>pictrl</i>, a python program used to control the COSMOS-PiSat interface.</li>
-   <li>Updated <a href="https://github.com/OpenSatKit/OpenSatKit/blob/master/cosmos/config/targets/PISAT/docs/Pi-Sat-Quick-Start.pdf">Pi-Sat Quick Start Guide</a> that fully describes how to configure and run a remote Pi-Sat target.</li>
+   <li>Updated <a href="https://github.com/OpenSatKit/OpenSatKit/blob/master/cosmos/config/targets/PISAT/docs/Pi-Sat-Quick-Start.pdf">Pi-Sat Quick Start Guide</a> with instructions that fully describe how to configure and run a remote Pi-Sat target.</li>
    <li>Continued updates to the <a href="https://github.com/OpenSatKit/OpenSatKit/blob/master/cosmos/config/targets/SIMSAT/docs/Mission-Fsw-Quick-Start.pdf">Mission FSW Quick Start Guide</a>.</li>
 </ul>
 
